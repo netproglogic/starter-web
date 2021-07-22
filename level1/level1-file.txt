@@ -1,0 +1,8 @@
+I have by no means covered all of what you need to know for this exam. Hopefully I have highlighted some of the important concepts, though. Be aware that it is a broad exam as mentioned previously.
+
+Now, for the test itself, it was my first time using Pearson Vue and their OnVue and it wasn’t a perfect experience by any means. You register for a test online and 30 minutes before your exam, you can start the check in process. That means that you have to provide pictures of the room you are taking the test in, as well as some form of identification such as your driver’s license. This process didn’t go exactly smoothly for me as there was some kind of bug so that when I was to take a picture of my driver’s license, the camera was facing me *sigh*.
+
+The OnVue app that you run on your computer basically shuts down everything else and runs some kind of browser lock to provide the exam to you. Make sure that this app can run before you take the test. Maybe you have some security software blocking it? Give it a go by downloading the app and trying it. It will test your camera, mic and your throughput on the network. Be aware that it doesn’t support all operating systems.
+
+When you have checked in, you will get assigned a proctor. This can take some time. It took 20 minutes for me, I think. I’ve heard people waiting for hours. Hopefully that’s not the case for you. 
+

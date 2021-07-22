@@ -1,0 +1,27 @@
+You can also specify that numbers should be supplemented with zeros instead of spaces:
+
+In [13]: '{:08b} {:08b} {:08b} {:08b}'.format(192, 100, 1, 1)
+Out[13]: '11000000 01100100 00000001 00000001'
+You can enter names in curly braces. This makes it possible to pass arguments in any order and also makes template more understandable:
+
+In [15]: '{ip}/{mask}'.format(mask=24, ip='10.1.1.1')
+Out[15]: '10.1.1.1/24'
+Another useful feature of string formatting is argument number specification:
+
+In [16]: '{1}/{0}'.format(24, '10.1.1.1')
+Out[16]: '10.1.1.1/24'
+For example this can prevent repetitive transmission of the same values:
+
+In [19]: ip_template = '''
+    ...: IP address:
+    ...: {:<8} {:<8} {:<8} {:<8}
+    ...: {:08b} {:08b} {:08b} {:08b}
+    ...: '''
+
+In [20]: print(ip_template.format(192, 100, 1, 1, 192, 100, 1, 1))
+
+IP address:
+192      100      1        1
+11000000 01100100 00000001 00000001
+In example above the octet address has to be passed twice - one for decimal forma
+
