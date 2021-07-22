@@ -13,3 +13,26 @@ In [5]: print('{}'.format([10, 1, 1,1]))
 You can align result in columns by formatting strings. In string formatting, you can specify how many characters are selected for the data. If number of characters in the data is less than number of characters selected, the missing characters are filled with blanks.
 
 For example, you can allign data in columns of equal width of 15 characters with right side alignment:
+
+[200~In [3]: vlan, mac, intf = ['100', 'aabb.cc80.7000', 'Gi0/1']
+
+In [4]: print("{:>15} {:>15} {:>15}".format(vlan, mac, intf))
+            100  aabb.cc80.7000           Gi0/1
+	    Alignment to the left:
+
+	    In [5]: print("{:15} {:15} {:15}".format(vlan, mac, intf))
+	    100             aabb.cc80.7000  Gi0/1
+	    Output template can also be multi-string:
+
+	    In [6]: ip_template = '''
+	       ...: IP address:
+	          ...: {}
+		     ...: '''
+
+		     In [7]: print(ip_template.format('10.1.1.1'))
+
+		     IP address:
+		     10.1.1.1
+		     You can also use string formatting to change the display format of numbers.
+
+		     For example, you can specify how many digits after the comma to show:
