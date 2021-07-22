@@ -1,0 +1,15 @@
+A special symbol {} indicates that the value that is passed to format method is placed here. Each pair of curly braces represents one place for the substitution.
+
+Values that are placed in curly braces may be of different types. For example, it can be a string, number or list:
+
+In [3]: print('{}'.format('10.1.1.1'))
+10.1.1.1
+
+In [4]: print('{}'.format(100))
+100
+
+In [5]: print('{}'.format([10, 1, 1,1]))
+[10, 1, 1, 1]
+You can align result in columns by formatting strings. In string formatting, you can specify how many characters are selected for the data. If number of characters in the data is less than number of characters selected, the missing characters are filled with blanks.
+
+For example, you can allign data in columns of equal width of 15 characters with right side alignment:
